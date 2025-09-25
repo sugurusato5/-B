@@ -15,12 +15,13 @@ def main():
     national_temp = [data["temperature"] for data in weather_information]
     print(sum(national_temp) / len(national_temp))
     # Q2. 大阪府のすべての駅名をカンマ区切りで出力してください( '梅田,大阪,堺' となればOK)
-    osaka_station = [data["station"] for data in weather_information if data["prefecture"]== "大阪府"]
+    osaka_station = [data["station"] for data in weather_information if data["prefecture"] == "大阪府"]
     print(",".join(osaka_station))
     # Q3. 福岡県の平均気温を計算してください(14.0となればOK)
     fukuoka_temps = [data["temperature"] for data in weather_information if data["prefecture"] == "福岡県"]
     fukuoka_ave_temp = sum(fukuoka_temps) / len(fukuoka_temps)
     print(fukuoka_ave_temp)
+
 
 if __name__ == "__main__":
     main()
