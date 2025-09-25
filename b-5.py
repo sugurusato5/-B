@@ -34,6 +34,6 @@ def ave(num_list):
 
 
 print(f"合計値: {total(num_list)}")
-print(f"合計値: {max(num_list)}")
-print(f"合計値: {min(num_list)}")
-print(f"合計値: {ave(num_list)}")
+print(f"最大値: {max(num_list)}")
+print(f"最小値: {min(num_list)}")
+print(f"平均値: {ave(num_list)}")
